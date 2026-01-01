@@ -89,16 +89,17 @@ export default function Home() {
               <span className="text-sm text-muted-foreground">August 2011 — Present</span>
             </div>
             <p className="leading-relaxed mb-4">
-              Building products that bridge technology and human experience. Kiara Translator is a real-time
-              multilingual translation app for Slack, supporting over 100 languages and enabling seamless
-              communication across language barriers. Successfully deployed for 2,000 social innovators at MIT's
-              global hackathon, translating Spanish and Portuguese in high-stakes environments.
+              Kiara Translator is a real-time multilingual translation app designed for Slack, enabling seamless communication across language barriers within teams. It supports over 100 languages and integrates directly into Slack, automatically translating messages to enhance productivity and inclusivity.
             </p>
-            <div className="flex flex-wrap gap-2">
-              <Badge>Real-Time Translation</Badge>
-              <Badge>Product Innovation</Badge>
-              <Badge>AI Integration</Badge>
-              <Badge>Team Communication</Badge>
+            <div className="mb-4">
+              <p className="font-semibold mb-2">Key Features and Strengths</p>
+              <ul className="list-disc list-inside space-y-1 leading-relaxed">
+                <li><strong>Real-Time Translation:</strong> Messages are translated instantly within Slack, facilitating smooth conversations among team members who speak different languages.</li>
+                <li><strong>Broad Language Support:</strong> Kiara supports over 100 languages, making it suitable for diverse, global teams.</li>
+                <li><strong>User-Friendly Integration:</strong> As a Slack plugin, Kiara offers a straightforward setup with no hidden fees, allowing teams to start using it immediately without complex configurations.</li>
+                <li><strong>Affordable Pricing:</strong> Kiara provides various pricing plans to accommodate different team sizes, starting at $30 per month for up to 10 users.</li>
+                <li><strong>Proven Effectiveness:</strong> Kiara has been utilized in significant projects, such as supporting 2,000 social innovators at MIT's global hackathon by translating Spanish and Portuguese, demonstrating its reliability in high-stakes environments.</li>
+              </ul>
             </div>
           </Card>
 
@@ -111,16 +112,15 @@ export default function Home() {
               <span className="text-sm text-muted-foreground">November 2024 — October 2025</span>
             </div>
             <p className="leading-relaxed mb-4">
-              Leading digital identity verification solutions through Liquid eKYC, enabling businesses to verify
-              customer identities online quickly and securely. Delivering fast verification processes (within
-              minutes), reducing costs for businesses, and implementing smart technology including face scans and AI
-              to accurately confirm identities and reduce fraud.
+              Liquid eKYC is a fully digital process that businesses use to verify a customer's identity online, without needing physical paperwork.
             </p>
-            <div className="flex flex-wrap gap-2">
-              <Badge>eKYC</Badge>
-              <Badge>Digital Identity</Badge>
-              <Badge>Face Recognition</Badge>
-              <Badge>Business Development</Badge>
+            <div className="mb-4">
+              <p className="font-semibold mb-2">Strengths:</p>
+              <ul className="list-disc list-inside space-y-1 leading-relaxed">
+                <li><strong>Fast and Easy:</strong> Customers can get verified quickly—usually within minutes, instead of days.</li>
+                <li><strong>Lower Costs:</strong> Businesses save money because they don't have to handle paper documents or manual checking.</li>
+                <li><strong>More Secure:</strong> It uses smart technology like face scans or AI to accurately confirm identities and reduce fraud.</li>
+              </ul>
             </div>
           </Card>
 
@@ -153,19 +153,10 @@ export default function Home() {
               </div>
               <span className="text-sm text-muted-foreground">April 1998 — June 2009</span>
             </div>
-            <p className="leading-relaxed mb-4">
-              Developed strategic business initiatives and international market expansion for renowned global
-              fashion brands including Paul Smith (UK), Replay Jeans, Patrizia Pepe, Freddy, Richard Ginori (Italy),
-              Essential (Belgium), and J.Lindeberg (Sweden). Successfully led cross-cultural projects and
-              partnerships as an expatriate in the UK and Italy, driving brand growth and enhancing market presence
-              across European markets.
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <Badge>International Business</Badge>
-              <Badge>Fashion Brands</Badge>
-              <Badge>Market Expansion</Badge>
-              <Badge>Cross-Cultural Management</Badge>
-            </div>
+            <ul className="list-disc list-inside space-y-2 leading-relaxed mb-4">
+              <li>Developed strategic business initiatives and international market expansion for renowned global fashion brands, including Paul Smith (UK), Replay Jeans, Patrizia Pepe, Freddy, Richard Ginori (Italy), Essential (Belgium), and J.Lindeberg (Sweden).</li>
+              <li>Successfully led cross-cultural projects and partnerships, working as an expatriate in the UK and Italy, driving brand growth and enhancing market presence across European markets.</li>
+            </ul>
           </Card>
         </div>
       </section>
