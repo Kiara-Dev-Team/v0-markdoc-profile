@@ -30,7 +30,7 @@ const navigation = [
 
 export default function Home() {
   return (
-    <DocsLayout navigation={navigation} title="Dave Ishii">
+    <DocsLayout navigation={navigation} title="WELCOME, I'M DAVE">
       {/* About Section */}
       <section id="about" className="mb-16">
         <h2 className="text-3xl font-semibold mb-6">About Me</h2>
