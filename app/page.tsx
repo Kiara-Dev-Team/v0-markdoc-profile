@@ -165,57 +165,35 @@ export default function Home() {
       <section id="publications" className="mb-16">
         <h2 className="text-3xl font-semibold mb-8">Publications & Patents</h2>
 
-        <div className="grid gap-8">
-          <Card className="overflow-hidden">
-            <div className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20" />
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold mb-2">Machine Learning Engineering Books</h3>
-              <p className="text-muted-foreground mb-4">
-                Authored multiple books on AI and machine learning engineering, including
-                "機械学習エンジニアになりたい人のための本" (Book for Those Who Want to Become Machine Learning
-                Engineers) and "コロナ vs. AI 最新テクノロジーで感染症に挑む" (Corona vs. AI: Challenging Infectious
-                Diseases with Latest Technology).
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="outline">AI/ML</Badge>
-                <Badge variant="outline">Technical Writing</Badge>
-                <Badge variant="outline">Education</Badge>
-              </div>
-            </div>
+        <div className="space-y-8">
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold mb-2">機械学習エンジニアになりたい人のための本 AIを天職にする</h3>
+            <p className="text-sm text-muted-foreground mb-2">(Book for Those Who Want to Become Machine Learning Engineers)</p>
+            <p className="leading-relaxed">Publication on AI and machine learning engineering career development.</p>
           </Card>
 
-          <Card className="overflow-hidden">
-            <div className="aspect-video bg-gradient-to-br from-secondary/20 to-accent/20" />
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold mb-2">Digital Transformation & Remote Work</h3>
-              <p className="text-muted-foreground mb-4">
-                Published "働き方のデジタルシフト: リモートワークからはじめる、しなやかな組織づくりの処方箋"
-                (Digital Shift in Work Styles: A Prescription for Creating Flexible Organizations Starting with
-                Remote Work), exploring the future of work and organizational transformation.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="outline">Remote Work</Badge>
-                <Badge variant="outline">Digital Transformation</Badge>
-                <Badge variant="outline">Business Strategy</Badge>
-              </div>
-            </div>
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold mb-2">働き方のデジタルシフト : リモートワークからはじめる、しなやかな組織づくりの処方箋</h3>
+            <p className="text-sm text-muted-foreground mb-2">(Digital Shift in Work Styles: A Prescription for Creating Flexible Organizations Starting with Remote Work)</p>
+            <p className="leading-relaxed">Exploring the future of work and organizational transformation through remote work practices.</p>
           </Card>
 
-          <Card className="overflow-hidden">
-            <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary/20" />
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold mb-2">Service Evaluation Patent</h3>
-              <p className="text-muted-foreground mb-4">
-                Invented and patented a system for evaluating services provided by service providers, including the
-                device architecture, methods, and program implementation. This innovation contributes to improving
-                service quality assessment and customer experience.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <Badge variant="outline">Patent</Badge>
-                <Badge variant="outline">Service Innovation</Badge>
-                <Badge variant="outline">Technology</Badge>
-              </div>
-            </div>
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold mb-2">コロナ vs. AI 最新テクノロジーで感染症に挑む</h3>
+            <p className="text-sm text-muted-foreground mb-2">(Corona vs. AI: Challenging Infectious Diseases with Latest Technology)</p>
+            <p className="leading-relaxed">Analysis of how AI and technology can be leveraged to combat infectious diseases.</p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold mb-2">機械学習エンジニアになりたい人のための本</h3>
+            <p className="text-sm text-muted-foreground mb-2">(Book for Those Who Want to Become Machine Learning Engineers)</p>
+            <p className="leading-relaxed">Comprehensive guide for aspiring machine learning engineers.</p>
+          </Card>
+
+          <Card className="p-6">
+            <h3 className="text-xl font-semibold mb-2">サービス提供者が提供するサービスを評価するための装置、その装置において実行される方法、プログラム</h3>
+            <p className="text-sm text-muted-foreground mb-2">(Patent: Device for Evaluating Services Provided by Service Providers, Method and Program)</p>
+            <p className="leading-relaxed">Patented system for evaluating services, including device architecture, methods, and program implementation for improving service quality assessment.</p>
           </Card>
         </div>
       </section>
