@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { cn } from "@/lib/utils"
 
 export interface NavItem {
@@ -58,6 +59,14 @@ export function TopNavigation({ navigation, title, activeSection, onSectionChang
       <nav className="container mx-auto flex h-16 items-center justify-between px-6">
         {/* Logo/Title */}
         <div className="flex items-center mr-8">
+          <Link href="/" className="hover:opacity-90 transition-opacity">
+            <Image
+              src="/kiara-logo.png"
+              alt="Kiara"
+              width={120}
+              height={40}
+              priority
+            />
           <Link href="/" className="text-xl font-semibold hover:opacity-80 transition-opacity">
             {title || "Dave Ishii"}
           </Link>
