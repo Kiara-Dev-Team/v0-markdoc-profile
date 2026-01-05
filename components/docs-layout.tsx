@@ -158,7 +158,7 @@ export function DocsLayout({ navigation, children, title }: DocsLayoutProps) {
             {/* Desktop Sidebar */}
             <aside
               className={cn(
-                "hidden lg:block sticky top-16 h-[calc(100vh-4rem)] w-64 border-r bg-white dark:bg-background transition-all",
+                "hidden lg:block sticky top-28 h-[calc(100vh-7rem)] w-64 border-r bg-white dark:bg-background transition-all",
                 isSidebarOpen ? "translate-x-0" : "-translate-x-full"
               )}
             >
@@ -187,7 +187,7 @@ export function DocsLayout({ navigation, children, title }: DocsLayoutProps) {
             {!isSidebarOpen && (
               <button
                 onClick={() => setIsSidebarOpen(true)}
-                className="hidden lg:block fixed left-0 top-20 p-2 bg-white dark:bg-slate-800 border border-l-0 rounded-r-md shadow-md z-40"
+                className="hidden lg:block fixed left-0 top-32 p-2 bg-white dark:bg-slate-800 border border-l-0 rounded-r-md shadow-md z-40"
                 aria-label="Open sidebar"
               >
                 <ChevronLeft className="h-4 w-4 rotate-180" />
