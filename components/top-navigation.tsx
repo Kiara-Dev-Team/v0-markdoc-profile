@@ -16,12 +16,11 @@ export interface NavItem {
 
 interface TopNavigationProps {
   navigation: NavItem[]
-  title?: string
   activeSection?: string
   onSectionChange?: (section: string) => void
 }
 
-export function TopNavigation({ navigation, title, activeSection, onSectionChange }: TopNavigationProps) {
+export function TopNavigation({ navigation, activeSection, onSectionChange }: TopNavigationProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   const [currentHash, setCurrentHash] = React.useState("")
 
