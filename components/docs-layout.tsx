@@ -10,7 +10,6 @@ import { cn } from "@/lib/utils"
 interface DocsLayoutProps {
   navigation: NavItem[]
   children: React.ReactNode
-  title?: string
 }
 
 function SidebarNavItem({ item, level = 0, currentHash }: { item: NavItem; level?: number; currentHash: string }) {
@@ -95,7 +94,7 @@ function SidebarNavItem({ item, level = 0, currentHash }: { item: NavItem; level
   )
 }
 
-export function DocsLayout({ navigation, children, title }: DocsLayoutProps) {
+export function DocsLayout({ navigation, children }: DocsLayoutProps) {
   const [activeSection, setActiveSection] = React.useState<string>("")
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(true)
   const [currentHash, setCurrentHash] = React.useState("")
@@ -143,7 +142,6 @@ export function DocsLayout({ navigation, children, title }: DocsLayoutProps) {
       {/* Top Navigation */}
       <TopNavigation
         navigation={navigation}
-        title={title}
         activeSection={activeSection}
         onSectionChange={setActiveSection}
       />
