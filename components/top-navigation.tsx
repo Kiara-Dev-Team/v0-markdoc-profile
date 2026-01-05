@@ -4,6 +4,7 @@ import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { cn } from "@/lib/utils"
+import { SearchDialog } from "@/components/search-dialog"
 
 export interface NavItem {
   title: string
@@ -121,6 +122,10 @@ export function TopNavigation({ navigation, title, activeSection, onSectionChang
           })}
         </div>
 
+        {/* Search */}
+        <div className="flex items-center gap-2">
+          <SearchDialog />
+        </div>
 
         {/* Mobile Menu Button */}
         <button
