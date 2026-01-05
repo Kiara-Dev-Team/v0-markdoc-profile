@@ -4,6 +4,7 @@ import * as React from "react"
 import Link from "next/link"
 import { ChevronLeft, ChevronDown, ChevronRight } from "lucide-react"
 import { TopNavigation, type NavItem } from "@/components/top-navigation"
+import { LanguageSelector } from "@/components/language-selector"
 import { cn } from "@/lib/utils"
 
 interface DocsLayoutProps {
@@ -146,6 +147,9 @@ export function DocsLayout({ navigation, children, title }: DocsLayoutProps) {
         activeSection={activeSection}
         onSectionChange={setActiveSection}
       />
+
+      {/* Language Selector */}
+      <LanguageSelector />
 
       <div className="flex">
         {/* Left Sidebar - Only shown when there's an active section with items */}
