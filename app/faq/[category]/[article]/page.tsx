@@ -110,15 +110,22 @@ export default async function ArticlePage({ params }: PageProps) {
           className="prose prose-lg max-w-none"
           dangerouslySetInnerHTML={{
             __html: article.content
-              .replace(/\n\n/g, "</p><p>")
-              .replace(/\n/g, "<br />")
-              .replace(/#{2,3}\s+(.+)/g, "<h3>$1</h3>")
+              // First, handle headings
+              .replace(/^###\s+(.+)$/gm, '<h3 class="text-xl font-semibold mt-6 mb-3">$1</h3>')
+              .replace(/^##\s+(.+)$/gm, '<h3 class="text-xl font-semibold mt-6 mb-3">$1</h3>')
+              // Then handle bold text
               .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+              // Handle links
               .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" class="text-primary hover:underline">$1</a>')
-              .replace(/<p>/g, '<p class="mb-4">')
-              .replace(/<h3>/g, '<h3 class="text-xl font-semibold mt-6 mb-3">')
-              .replace(/^- (.+)/gm, "<li>$1</li>")
-              .replace(/(<li>.*<\/li>)/s, "<ul class='list-disc list-inside space-y-2 mb-4'>$1</ul>"),
+              // Handle lists (wrap list items and create ul)
+              .replace(/^- (.+)$/gm, "<li>$1</li>")
+              .replace(/((?:<li>.*<\/li>\n?)+)/g, "<ul class='list-disc list-inside space-y-2 mb-4'>$1</ul>")
+              // Finally handle paragraphs and line breaks
+              .replace(/\n\n/g, "</p><p class='mb-4'>")
+              .replace(/\n/g, "<br />")
+              // Wrap entire content in paragraph if it doesn't start with a tag
+              .replace(/^([^<])/gm, "<p class='mb-4'>$1")
+              .replace(/<p class='mb-4'>(<[^p])/g, "$1"),
           }}
         />
       </Card>
