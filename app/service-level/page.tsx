@@ -42,6 +42,57 @@ export default function ServiceLevelPage() {
 
       <section className="mb-12">
         <Card className="p-6 mb-6">
+          <h2 className="text-2xl font-semibold mb-4">Customer Support Service Level Objectives (SLO)</h2>
+          <p className="text-muted-foreground mb-6">
+            We are committed to providing excellent customer support with clearly defined response and resolution times.
+          </p>
+          <div className="space-y-4">
+            <div className="flex justify-between items-start border-b pb-3">
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold mb-1">First Response Time</h3>
+                <p className="text-sm text-muted-foreground">Initial response to customer inquiries</p>
+              </div>
+              <Badge className="ml-4">95% within 1 business day</Badge>
+            </div>
+            <div className="flex justify-between items-start border-b pb-3">
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold mb-1">Critical Issue Acknowledgment</h3>
+                <p className="text-sm text-muted-foreground">Urgent technical issues and outages</p>
+              </div>
+              <Badge variant="destructive" className="ml-4">100% within 4 business hours</Badge>
+            </div>
+            <div className="flex justify-between items-start border-b pb-3">
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold mb-1">Resolution Time</h3>
+                <p className="text-sm text-muted-foreground">Complete resolution of support cases</p>
+              </div>
+              <Badge className="ml-4">90% within 2 business days</Badge>
+            </div>
+            <div className="flex justify-between items-start border-b pb-3">
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold mb-1">Ongoing Case Updates</h3>
+                <p className="text-sm text-muted-foreground">Regular status updates for open tickets</p>
+              </div>
+              <Badge className="ml-4">100% every 7 business days</Badge>
+            </div>
+            <div className="flex justify-between items-start border-b pb-3">
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold mb-1">SLA Compliance</h3>
+                <p className="text-sm text-muted-foreground">Overall adherence to service level targets</p>
+              </div>
+              <Badge className="ml-4">≥90% across all targets</Badge>
+            </div>
+            <div className="flex justify-between items-start">
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold mb-1">Customer Satisfaction</h3>
+                <p className="text-sm text-muted-foreground">Target satisfaction rating from support interactions</p>
+              </div>
+              <Badge className="ml-4">≥4.5/5 rating</Badge>
+            </div>
+          </div>
+        </Card>
+
+        <Card className="p-6 mb-6">
           <h2 className="text-2xl font-semibold mb-4">Service Availability</h2>
           <div className="space-y-4">
             <div>
@@ -57,24 +108,6 @@ export default function ServiceLevelPage() {
                 Our current translation accuracy is approximately 90%. We continuously improve our algorithms
                 to enhance translation quality, especially for special terms and nuanced language.
               </p>
-            </div>
-          </div>
-        </Card>
-
-        <Card className="p-6 mb-6">
-          <h2 className="text-2xl font-semibold mb-4">Support Response Times</h2>
-          <div className="space-y-3">
-            <div className="flex justify-between items-center">
-              <span className="font-medium">Email Support</span>
-              <Badge>Within 24 hours</Badge>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="font-medium">Chat Support</span>
-              <Badge>During business hours</Badge>
-            </div>
-            <div className="flex justify-between items-center">
-              <span className="font-medium">Critical Issues</span>
-              <Badge variant="destructive">Within 4 hours</Badge>
             </div>
           </div>
         </Card>

@@ -68,29 +68,38 @@ export default function FAQPage() {
           <p className="text-muted-foreground mb-8">{category.description}</p>
 
           <div className="space-y-6">
-            {category.articles.map((article) => (
-              <Card key={article.id} className="p-6">
-                <Link href={`/faq/${category.slug}/${article.slug}`}>
-                  <h3 className="text-xl font-semibold mb-3 hover:text-primary transition-colors">
-                    {article.title}
-                  </h3>
-                </Link>
-                <div
-                  className="prose prose-sm max-w-none text-muted-foreground"
-                  dangerouslySetInnerHTML={{
-                    __html: article.content
-                      .replace(/\n/g, "<br />")
-                      .substring(0, 200) + (article.content.length > 200 ? "..." : ""),
-                  }}
-                />
-                <Link
-                  href={`/faq/${category.slug}/${article.slug}`}
-                  className="text-primary hover:underline text-sm mt-3 inline-block"
-                >
-                  Read more →
-                </Link>
-              </Card>
-            ))}
+            {category.articles.map((article) => {
+              // Clean markdown and extract preview text
+              const cleanText = article.content
+                .replace(/##\s+/g, "") // Remove headers
+                .replace(/\*\*(.*?)\*\*/g, "$1") // Remove bold
+                .replace(/\[(.*?)\]\(.*?\)/g, "$1") // Remove links
+                .replace(/\n+/g, " ") // Replace newlines with spaces
+                .trim()
+
+              // Get first 2-3 sentences or first ~200 chars at sentence boundary
+              const sentences = cleanText.match(/[^.!?]+[.!?]+/g) || [cleanText]
+              const preview = sentences.slice(0, 2).join(" ").trim()
+
+              return (
+                <Card key={article.id} className="p-6">
+                  <Link href={`/faq/${category.slug}/${article.slug}`}>
+                    <h3 className="text-xl font-semibold mb-3 hover:text-primary transition-colors">
+                      {article.title}
+                    </h3>
+                  </Link>
+                  <p className="text-muted-foreground line-clamp-3 mb-3">
+                    {preview}
+                  </p>
+                  <Link
+                    href={`/faq/${category.slug}/${article.slug}`}
+                    className="text-primary hover:underline text-sm inline-block"
+                  >
+                    Read more →
+                  </Link>
+                </Card>
+              )
+            })}
           </div>
         </section>
       ))}

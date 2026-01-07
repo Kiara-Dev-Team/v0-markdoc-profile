@@ -33,6 +33,20 @@
           "slug": "languages",
           "url": "https://www.getkiara.com/help/article/languages",
           "content": "Kiara supports 100 languages. If the language you need is not on the list, please contact them via their [contact form](https://www.getkiara.com/contact) or email hello@kiara.team.\n\nThe comprehensive list includes major world languages like English, Spanish, Chinese, Arabic, French, as well as regional languages like Afrikaans, Basque, Cebuano, and Asian languages like Hindi, Japanese, Korean, Vietnamese, and European languages like German, Italian, Russian, Portuguese."
+        },
+        {
+          "id": "signup-properly",
+          "title": "How to sign up properly?",
+          "slug": "signup-properly",
+          "url": "https://www.getkiara.com/help/article/signup-properly",
+          "content": "Due to Slack plug-in nature, there are multiple installation ways. The recommended method involves:\n1. Access the Kiara website\n2. Click the '14-day free trial' button\n3. Follow the on-screen instructions"
+        },
+        {
+          "id": "install-after-payment",
+          "title": "How to install Kiara Translator after payment",
+          "slug": "install-after-payment",
+          "url": "https://www.getkiara.com/help/article/install-after-payment",
+          "content": "Coming Soon\n\nDetailed instructions for installing Kiara Translator after completing payment will be available soon. For assistance, please contact us at hello@kiara.team"
         }
       ]
     },
@@ -182,6 +196,55 @@
           "slug": "cannot-invite-kiara",
           "url": "https://www.getkiara.com/help/article/cannot-invite-kiara",
           "content": "If you are in below situation, please try this way to invite Kiara:\n- Cannot invite Kiara to a channel at all\n- You could invite Kiara to #general channel but not for other channels\n- An error occurs when inviting Kiara to a channel\n\n**Solution**: Say \"@kiara\" in the message box to invite Kiara to a channel."
+        },
+        {
+          "id": "data-privacy",
+          "title": "How do you keep or use customer data?",
+          "slug": "data-privacy",
+          "url": "https://www.getkiara.com/help/article/data-privacy",
+          "content": "Kiara implements an immediate data deletion policy to protect customer privacy. We do not sell customer data or use it for AI training purposes.\n\n**Key Privacy Principles:**\n- Immediate deletion of translation data\n- No data sales to third parties\n- No use of customer data for AI training\n- Full privacy protection compliance"
+        },
+        {
+          "id": "duplicated-translation",
+          "title": "Sometimes we see duplicated translation",
+          "slug": "duplicated-translation",
+          "url": "https://www.getkiara.com/help/article/duplicated-translation",
+          "content": "Duplicated translations can occur during periods of high traffic. This is related to technical debt in our database structure. We are working on improving the system to reduce these occurrences.\n\n**What causes this:**\n- High traffic periods\n- Database structure limitations\n\n**What we're doing:**\n- Actively working on system improvements\n- Reducing occurrence frequency"
+        },
+        {
+          "id": "reinstall-kiara",
+          "title": "How to re-install Kiara after technical problem",
+          "slug": "reinstall-kiara",
+          "url": "https://www.getkiara.com/help/article/reinstall-kiara",
+          "content": "To re-install Kiara after experiencing technical problems:\n\n1. Remove Kiara from your Slack workspace\n2. Clear browser cache and cookies\n3. Restart your browser\n4. Follow the standard installation process again\n5. Ensure user count matches your Slack workspace\n6. Contact support if issues persist at hello@kiara.team"
+        },
+        {
+          "id": "translation-consumption-monitoring",
+          "title": "Can we monitor translation consumption in real-time?",
+          "slug": "translation-consumption-monitoring",
+          "url": "https://www.getkiara.com/help/article/translation-consumption-monitoring",
+          "content": "Sorry. Due to high traffic, we cannot provide this dashboard as of September 2025.\n\n**Technical Limitation:**\nSome big customers consume 100M characters per month, making real-time SQL execution and dashboard display technically difficult.\n\nWe appreciate your understanding as we work to scale our infrastructure."
+        },
+        {
+          "id": "signin-issues",
+          "title": "I could not sign-in or up. I see nothing after doing it",
+          "slug": "signin-issues",
+          "url": "https://www.getkiara.com/help/article/signin-issues",
+          "content": "**Important:** Only one person can be an admin of Kiara Translator.\n\n**Example:**\nIf alice@kiara.team already signed up and paid, bob@kiara.team cannot sign in as admin.\n\n**Solution:**\nEnsure you're using the admin account that was used for initial signup and payment. For access issues, contact hello@kiara.team"
+        },
+        {
+          "id": "workflow-translation",
+          "title": "Can Kiara translate Slack Workflow?",
+          "slug": "workflow-translation",
+          "url": "https://www.getkiara.com/help/article/workflow-translation",
+          "content": "Sorry. Currently we do not handle Workflow or bot translation.\n\n**Why:**\nThis might cause an 'infinite loop' of translation when bot translates bot, leading to technical issues.\n\n**Future Plans:**\nWhen we come up with a nice solution, we will develop it and add it to our roadmap."
+        },
+        {
+          "id": "api-workflow-integration",
+          "title": "Can we use Kiara as API and connect with Slack Workflow?",
+          "slug": "api-workflow-integration",
+          "url": "https://www.getkiara.com/help/article/api-workflow-integration",
+          "content": "Sorry. Currently we do not sell translation API.\n\nIf you are interested in API access for integration with Slack Workflow or other systems, please contact us at hello@kiara.team to discuss your requirements."
         }
       ]
     },
@@ -232,6 +295,27 @@
           "slug": "issue-quotation",
           "url": "https://www.getkiara.com/help/article/issue-quotation",
           "content": "Yes. We can issue a quotation.\n\nPlease ask us with [form](https://www.getkiara.com/contact) or at hello@kiara.team"
+        },
+        {
+          "id": "payment-separate-payer",
+          "title": "How to start Kiara when paying separately",
+          "slug": "payment-separate-payer",
+          "url": "https://www.getkiara.com/help/article/payment-separate-payer",
+          "content": "Coming Soon\n\nDetailed instructions for setting up Kiara when the installer and payer are different people will be available soon. For immediate assistance, please contact us at hello@kiara.team"
+        },
+        {
+          "id": "payment-dashboard-access",
+          "title": "How can we get to the payment dashboard?",
+          "slug": "payment-dashboard-access",
+          "url": "https://www.getkiara.com/help/article/payment-dashboard-access",
+          "content": "To access the payment dashboard:\n\n1. Go to www.getkiara.com\n2. Click the 'arrow sign' (▼) next to the 'sign up' button at the top\n3. Enter the dashboard\n\nFor detailed guidance on updating your card, please refer to the [update card guide](https://www.getkiara.com/help/article/update-card)."
+        },
+        {
+          "id": "special-price-payment",
+          "title": "How can you pay when you agreed a special price with Kiara customer support?",
+          "slug": "special-price-payment",
+          "url": "https://www.getkiara.com/help/article/special-price-payment",
+          "content": "**For customers with customized pricing:**\n\n1. Choose the plan: 1 person = $3/month (tentatively)\n2. We will refund you $3 immediately\n3. We will send you the agreed price payment URL separately\n\n**Note:** This temporary selection allows us to set up your custom pricing correctly. Contact hello@kiara.team if you have questions."
         }
       ]
     },
@@ -261,6 +345,13 @@
           "slug": "cancel-subscription",
           "url": "https://www.getkiara.com/help/article/cancel-subscription",
           "content": "We Are Sorry to See You Go!\n\nTo cancel subscription, please fill in [contact form](https://www.getkiara.com/contact) and will let you know after the cancellation has been done."
+        },
+        {
+          "id": "remove-kiara-app",
+          "title": "How to remove Kiara app",
+          "slug": "remove-kiara-app",
+          "url": "https://www.getkiara.com/help/article/remove-kiara-app",
+          "content": "Removing Kiara is the same process as removing other Slack apps.\n\n**Steps:**\n1. Follow the [official Slack instructions](https://slack.com/help/articles/360003125231-Remove-apps-and-custom-integrations-from-your-workspace) for removing apps from your workspace\n2. Also email your cancellation request to hello@kiara.team to ensure your subscription is properly terminated"
         }
       ]
     },
@@ -282,10 +373,11 @@
   ],
   "metadata": {
     "extracted_date": "2026-01-06",
-    "source": "https://www.getkiara.com/help",
+    "updated_date": "2026-01-07",
+    "source": "https://www.getkiara.com/help + GitHub Issue #11",
     "total_categories": 6,
-    "total_articles": 33,
+    "total_articles": 46,
     "languages": ["en"],
-    "notes": "Content extracted from Kiara Translator help center. Japanese versions need to be checked and added."
+    "notes": "Content extracted from Kiara Translator help center (33 articles) + GitHub Issue #11 (13 articles). Total 46 articles. Service Level SLO data used for dedicated page."
   }
 }
